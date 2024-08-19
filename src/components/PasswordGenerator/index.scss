@@ -1,0 +1,77 @@
+.password-generator {
+  background-color: #fff;
+  border: 1px solid gray;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Lowered opacity for a softer shadow */
+
+  .output-container {
+    .input-with-icon {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+
+      input[type="text"] {
+        width: 100%;
+        padding-right: 50px;
+        box-sizing: border-box;
+        height: 50px;
+        padding-left: 16px;
+        font-size: 24px;
+      }
+
+      .copy-button {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover svg {
+          color: #5e5e5e;
+        }
+        svg {
+          font-size: 1.5rem;
+          color: #000;
+          transition: color 0.2s ease-in-out; /* Smoother transition */
+        }
+      }
+    }
+  }
+
+  .controls {
+    padding: 0.5em; /* Increased padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5em; /* Added gap for consistent spacing */
+  }
+
+  .generate-btn {
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+    background-color: #5bffd8;
+    height: 50px;
+    color: #000;
+    border: 1px solid #000;
+    font-size: 24px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s, border-color 0.2s; /* Smoother transition for background and border */
+
+    &:hover {
+      border-color: #fff;
+      background-color: #3bffb3; /* Slightly darker background on hover */
+    }
+    &:focus,
+    &:focus-visible {
+      outline: 4px auto -webkit-focus-ring-color;
+    }
+  }
+}

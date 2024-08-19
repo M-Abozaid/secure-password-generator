@@ -1,0 +1,11 @@
+.checkbox-container {
+  font-size: 20px;
+  label {
+    cursor: pointer;
+    input {
+      margin-right: 14px;
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+}
